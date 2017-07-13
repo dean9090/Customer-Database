@@ -7,13 +7,13 @@
 const companyDir = document.querySelector(".companyDir")
 
 
-let profile = document.createElement("div");
-profile.classList.add("profile")            // adds class to created div class is profile
-companyDir.appendChild(profile)           // appends profile to companyDir
-
-let img = document.createElement("img");
-
-profile.appendChild(img)
+// let profile = document.createElement("div");
+// profile.classList.add("profile")            // adds class to created div class is profile
+// companyDir.appendChild(profile)           // appends profile to companyDir
+//
+// let img = document.createElement("img");
+//
+// profile.appendChild(img)
 
 
 
@@ -62,12 +62,18 @@ profile.appendChild(pMail);                 //
 
 // ****************ADDRESS*******************
 
-let address = person.location.street + " " + person.location.city +" "+ person.location.state +" "+ person.location.postcode;
+let address = person.location.street;
 let pAddrress = document.createElement("p");
 pAddrress.classList.add("Address");
 pAddrress.innerHTML = address;
 profile.appendChild(pAddrress);
 
+// ***************City***********************
+let city =  person.location.city +", "+ person.location.state +", "+ person.location.postcode;
+let pCity = document.createElement("p");
+pCity.classList.add("City")
+pCity.innerHTML = city;
+profile.appendChild(pCity);
 
 
 // **************PHONE NUMBER*****************

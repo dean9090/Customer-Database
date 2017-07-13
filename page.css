@@ -1,0 +1,94 @@
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+h1{
+  text-align: center;
+
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.companyDir{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5em;
+  padding-right: 5em;
+
+
+}
+
+.companyDir>.profile{
+  display: flex;
+  flex-direction: column;
+
+
+  margin-bottom: 50px;
+}
+
+img{
+  height: 300px;
+  width: auto;
+}
+
+
+p{
+  text-align: center;
+}
+
+
+p.Name{
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid green;
+  padding-bottom: .25em;
+
+
+
+}
+
+p.Email{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(202,202,202);
+
+}
+
+
+p.Address{
+  text-align: center;
+  color: rgb(136,136,136);
+  text-transform: capitalize;
+
+}
+
+
+p.City{
+  color: rgb(136,136,136);
+  margin-top: -.65em;
+  text-transform: capitalize;
+
+}
+
+p.Phone{
+  color: rgb(136,136,136);
+  margin-top: -.65em
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
